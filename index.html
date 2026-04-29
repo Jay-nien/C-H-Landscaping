@@ -3,98 +3,203 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>C & H Landscaping</title>
+  <title>C & H Landscaping | Lawn Care & Landscaping Services</title>
+  <meta name="description" content="C & H Landscaping provides lawn care, mowing, mulching, sod installation, grading, pressure washing, cleanup services, and landscape maintenance." />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-stone-50 text-gray-800">
+
+  <!-- Top Bar -->
+  <div class="bg-green-950 text-white text-sm">
+    <div class="max-w-7xl mx-auto px-6 py-2 flex flex-col sm:flex-row justify-between gap-2">
+      <p>Serving Pilot Mountain, Mt. Airy, and surrounding communities</p>
+      <p><a href="tel:3364298406" class="font-semibold hover:underline">Call 336-429-8406</a></p>
+    </div>
+  </div>
 
   <!-- Header -->
-  <header class="bg-green-800 text-white p-6 shadow-lg">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">C & H Landscaping</h1>
-      <nav class="space-x-4">
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Contact</a>
+  <header class="bg-white sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div>
+        <h1 class="text-2xl md:text-3xl font-extrabold text-green-900">C & H Landscaping</h1>
+        <p class="text-sm text-gray-600">Reliable lawn care, landscaping, and property maintenance</p>
+      </div>
+      <nav class="flex flex-wrap justify-center gap-4 text-sm font-semibold text-gray-700">
+        <a href="#services" class="hover:text-green-800">Services</a>
+        <a href="#about" class="hover:text-green-800">About</a>
+        <a href="#why" class="hover:text-green-800">Why Us</a>
+        <a href="#reviews" class="hover:text-green-800">Reviews</a>
+        <a href="#booking" class="hover:text-green-800">Book</a>
+        <a href="#contact" class="hover:text-green-800">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="bg-cover bg-center text-white text-center py-24" style="background-image:url('https://images.unsplash.com/photo-1598514983318-2f64f8f4796c');">
-    <div class="bg-black bg-opacity-60 p-10">
-      <h2 class="text-4xl font-bold mb-4">Professional Landscaping You Can Trust</h2>
-      <p class="text-lg mb-6">Serving your local community with quality and care</p>
-      <a href="#booking" class="bg-yellow-500 text-black px-6 py-3 rounded-xl font-semibold">Book an Appointment</a>
+  <section class="relative bg-cover bg-center text-white" style="background-image:url('https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1600&q=80');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative max-w-7xl mx-auto px-6 py-28 md:py-36">
+      <div class="max-w-3xl">
+        <p class="uppercase tracking-widest text-yellow-400 font-bold mb-3">Professional lawn care & landscaping</p>
+        <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">Clean, healthy, well-maintained outdoor spaces.</h2>
+        <p class="text-lg md:text-xl mb-8 text-gray-100">From mowing and mulching to grading, sod installation, cleanup services, and pressure washing, C & H Landscaping helps keep your property looking its best.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="tel:3364298406" class="bg-yellow-400 text-black px-7 py-4 rounded-xl font-bold text-center shadow-lg hover:bg-yellow-300">Call Now</a>
+          <a href="#booking" class="bg-white text-green-900 px-7 py-4 rounded-xl font-bold text-center shadow-lg hover:bg-gray-100">Request an Estimate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Highlights -->
+  <section class="max-w-7xl mx-auto px-6 -mt-10 relative z-10">
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-2xl shadow-xl border-t-4 border-green-700">
+        <h3 class="font-bold text-xl mb-2 text-green-900">Lawn Maintenance</h3>
+        <p>Reliable mowing, trimming, weed control, and routine yard care.</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-xl border-t-4 border-green-700">
+        <h3 class="font-bold text-xl mb-2 text-green-900">Landscape Improvements</h3>
+        <p>Mulch, sod, grass seeding, tree landscaping, and design upgrades.</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-xl border-t-4 border-green-700">
+        <h3 class="font-bold text-xl mb-2 text-green-900">Property Cleanup</h3>
+        <p>Leaf removal, seasonal cleanup, grading, pressure washing, and more.</p>
+      </div>
     </div>
   </section>
 
   <!-- Services -->
-  <section id="services" class="py-16 max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-10">Our Services</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-white p-4 rounded-xl shadow">Grass Seeding</div>
-      <div class="bg-white p-4 rounded-xl shadow">Landscape Design</div>
-      <div class="bg-white p-4 rounded-xl shadow">Lawn Care</div>
-      <div class="bg-white p-4 rounded-xl shadow">Mulching</div>
-      <div class="bg-white p-4 rounded-xl shadow">Sod Installation</div>
-      <div class="bg-white p-4 rounded-xl shadow">Tree Trimming</div>
-      <div class="bg-white p-4 rounded-xl shadow">Weed Control</div>
-      <div class="bg-white p-4 rounded-xl shadow">Grading</div>
-      <div class="bg-white p-4 rounded-xl shadow">Leaf Removal</div>
-      <div class="bg-white p-4 rounded-xl shadow">Pressure Washing</div>
-      <div class="bg-white p-4 rounded-xl shadow">Yard Maintenance</div>
-      <div class="bg-white p-4 rounded-xl shadow">Fall/Spring Cleanup</div>
+  <section id="services" class="py-20 max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <p class="text-green-700 font-bold uppercase tracking-widest">What We Offer</p>
+      <h2 class="text-4xl font-extrabold text-gray-900">Complete Landscaping Services</h2>
+      <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Whether you need regular lawn maintenance or a larger outdoor improvement project, C & H Landscaping is ready to help.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="bg-white p-5 rounded-2xl shadow font-semibold">Grass Seeding</div>
+      <div class="bg-white p-5 rounded-2xl shadow font-semibold">Landscape Design</div>
+      <div class="bg-white p-5 rounded-2xl shadow font-semibold">Landscaping Maintenance</div>
+      <div class="bg-white p-5 rounded-2xl shadow font-semibold">Lawn Care</div>
+      <div class="bg-white p-5 rounded-2xl shadow font-semibold">Mowing & Maintenance</div>
+      <div class="bg-white p-5 rounded-2xl shadow font-semibold">Mulching</div>
+      <div class="bg-white p-5 rounded-2xl shadow font-semibold">Sod Installation</div>
+      <div class="bg-white p-5 rounded-2xl shadow font-semibold">Tree Landscaping</div>
+      <div class="bg-white p-5 rounded-2xl shadow font-semibold">Weed Control</div>
+      <div class="bg-white p-5 rounded-2xl shadow font-semibold">Yard Work</div>
+      <div class="bg-white p-5 rounded-2xl shadow font-semibold">Fall/Spring Cleanup</div>
+      <div class="bg-white p-5 rounded-2xl shadow font-semibold">Grading</div>
+      <div class="bg-white p-5 rounded-2xl shadow font-semibold">Leaf Removal</div>
+      <div class="bg-white p-5 rounded-2xl shadow font-semibold">Pressure Washing</div>
+      <div class="bg-white p-5 rounded-2xl shadow font-semibold">Tree Trimming</div>
+      <div class="bg-white p-5 rounded-2xl shadow font-semibold">Yard Maintenance</div>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about" class="bg-white py-16">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">About Us</h2>
-      <p>
-        C & H Landscaping is dedicated to providing high-quality landscaping services with attention to detail and customer satisfaction.
-        From lawn care to full landscape transformations, we take pride in every project.
-      </p>
+  <section id="about" class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-green-700 font-bold uppercase tracking-widest">About C & H Landscaping</p>
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-6">Dependable service for yards big and small.</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">C & H Landscaping provides reliable landscape maintenance, installations, and property enhancement services. From routine mowing to seasonal cleanup and outdoor improvements, the goal is simple: quality work, clear communication, and a yard you can be proud of.</p>
+        <p class="text-gray-700 leading-relaxed">Need a one-time cleanup or ongoing maintenance? Call today to discuss your property and request a free estimate.</p>
+      </div>
+      <div class="bg-green-900 text-white p-8 rounded-3xl shadow-xl">
+        <h3 class="text-2xl font-bold mb-4">Request a Free Estimate</h3>
+        <p class="mb-6 text-green-100">Tell us what your property needs and we’ll help plan the right service.</p>
+        <a href="tel:3364298406" class="block bg-yellow-400 text-black text-center px-6 py-4 rounded-xl font-bold hover:bg-yellow-300">Call 336-429-8406</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="why" class="py-20 max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <p class="text-green-700 font-bold uppercase tracking-widest">Why Customers Choose Us</p>
+      <h2 class="text-4xl font-extrabold text-gray-900">Professional, reliable, and detail-focused.</h2>
+    </div>
+    <div class="grid md:grid-cols-4 gap-6">
+      <div class="bg-white p-6 rounded-2xl shadow text-center"><h3 class="font-bold text-lg mb-2">Free Estimates</h3><p class="text-sm text-gray-600">Clear pricing before work begins.</p></div>
+      <div class="bg-white p-6 rounded-2xl shadow text-center"><h3 class="font-bold text-lg mb-2">Reliable Scheduling</h3><p class="text-sm text-gray-600">Consistent service you can count on.</p></div>
+      <div class="bg-white p-6 rounded-2xl shadow text-center"><h3 class="font-bold text-lg mb-2">Wide Range of Services</h3><p class="text-sm text-gray-600">From mowing to grading and cleanup.</p></div>
+      <div class="bg-white p-6 rounded-2xl shadow text-center"><h3 class="font-bold text-lg mb-2">Local Business</h3><p class="text-sm text-gray-600">Proudly serving nearby communities.</p></div>
     </div>
   </section>
 
   <!-- Reviews -->
-  <section id="reviews" class="py-16 max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-10">Customer Reviews</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-white p-6 rounded-xl shadow">"Great work and very reliable!"</div>
-      <div class="bg-white p-6 rounded-xl shadow">"My yard has never looked better."</div>
-      <div class="bg-white p-6 rounded-xl shadow">"Professional and affordable service."</div>
+  <section id="reviews" class="bg-green-950 text-white py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <p class="text-yellow-400 font-bold uppercase tracking-widest">Reviews</p>
+        <h2 class="text-4xl font-extrabold">What Customers Are Saying</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white text-gray-800 p-6 rounded-2xl shadow"><p class="mb-4">“Great work and very reliable. The yard looked excellent when they finished.”</p><strong>Local Customer</strong></div>
+        <div class="bg-white text-gray-800 p-6 rounded-2xl shadow"><p class="mb-4">“Professional, affordable, and easy to work with. Highly recommend.”</p><strong>Residential Client</strong></div>
+        <div class="bg-white text-gray-800 p-6 rounded-2xl shadow"><p class="mb-4">“They handled the cleanup quickly and made the property look much better.”</p><strong>Property Owner</strong></div>
+      </div>
+      <p class="text-center text-green-200 text-sm mt-6">Replace these with real Facebook or Google reviews when available.</p>
     </div>
   </section>
 
   <!-- Booking -->
-  <section id="booking" class="bg-green-100 py-16">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-6">Book an Appointment</h2>
-      <form action="mailto:your@email.com" method="post" enctype="text/plain" class="space-y-4">
-        <input type="text" name="name" placeholder="Your Name" class="w-full p-3 rounded" required>
-        <input type="tel" name="phone" placeholder="Phone Number" class="w-full p-3 rounded" required>
-        <textarea name="message" placeholder="Describe your project" class="w-full p-3 rounded" required></textarea>
-        <button type="submit" class="bg-green-700 text-white px-6 py-3 rounded">Submit</button>
+  <section id="booking" class="py-20 bg-stone-100">
+    <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-start">
+      <div>
+        <p class="text-green-700 font-bold uppercase tracking-widest">Book an Appointment</p>
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Need lawn care or landscaping work?</h2>
+        <p class="text-gray-700 mb-6">Use the form to request an appointment or call directly for faster service.</p>
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <p class="font-bold text-lg">Fastest way to reach us:</p>
+          <a href="tel:3364298406" class="text-2xl font-extrabold text-green-800 hover:underline">336-429-8406</a>
+        </div>
+      </div>
+      <form action="mailto:your@email.com" method="post" enctype="text/plain" class="bg-white p-6 rounded-2xl shadow space-y-4">
+        <input type="text" name="name" placeholder="Your Name" class="w-full p-3 rounded border" required>
+        <input type="tel" name="phone" placeholder="Phone Number" class="w-full p-3 rounded border" required>
+        <select name="service" class="w-full p-3 rounded border">
+          <option>Service Needed</option>
+          <option>Lawn mowing / maintenance</option>
+          <option>Mulching</option>
+          <option>Sod installation</option>
+          <option>Grading</option>
+          <option>Leaf removal / cleanup</option>
+          <option>Pressure washing</option>
+          <option>Other</option>
+        </select>
+        <textarea name="message" placeholder="Tell us about your project" class="w-full p-3 rounded border h-32" required></textarea>
+        <button type="submit" class="w-full bg-green-800 text-white px-6 py-4 rounded-xl font-bold hover:bg-green-700">Submit Request</button>
+        <p class="text-xs text-gray-500">Note: connect this form to the business email before launch.</p>
       </form>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="bg-gray-900 text-white py-16 text-center">
-    <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
-    <p class="text-lg">📞 336-429-8406</p>
-    <p class="mt-4">
-      <a href="https://facebook.com" class="underline">Find us on Facebook (C&H Landscaping)</a>
-    </p>
+  <section id="contact" class="bg-gray-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center md:text-left">
+      <div>
+        <h2 class="text-3xl font-extrabold mb-4">C & H Landscaping</h2>
+        <p class="text-gray-300">Reliable lawn care, landscaping, grading, cleanup, and property maintenance services.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-xl mb-3">Contact</h3>
+        <p><a href="tel:3364298406" class="hover:underline">📞 336-429-8406</a></p>
+        <p class="mt-2">📍 Pilot Mountain, NC area</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-xl mb-3">Social</h3>
+        <a href="https://www.facebook.com/CHLandscaping10/" target="_blank" class="underline">Facebook: C&H Landscaping</a>
+      </div>
+    </div>
   </section>
 
+  <!-- Sticky Mobile Call Button -->
+  <a href="tel:3364298406" class="fixed bottom-4 left-4 right-4 md:hidden bg-yellow-400 text-black text-center py-4 rounded-xl font-extrabold shadow-2xl">Call C & H Landscaping</a>
+
   <!-- Footer -->
-  <footer class="bg-black text-white text-center p-4">
-    <p>&copy; 2026 C & H Landscaping</p>
+  <footer class="bg-black text-white text-center p-4 text-sm">
+    <p>&copy; 2026 C & H Landscaping. All rights reserved.</p>
   </footer>
 
 </body>
